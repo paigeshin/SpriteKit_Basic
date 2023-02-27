@@ -1,5 +1,10 @@
 # SpriteKit_Basic
 
+- (1) Create SKView
+- (2) initialize SKView.scene 
+- (3) create nodes and add nodes to the scene
+- (4) animate 
+
 ```swift
 class ViewController: UIViewController {
 
@@ -54,6 +59,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     
+        // MARK: (6) ANIMATE 
         let nodes = self.animationView.scene!.children
         for (index, node) in nodes.enumerated() {
             node.run(.sequence([
